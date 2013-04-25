@@ -2,14 +2,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    android:gravity="top"
+    tools:context=".Compass" >
 
     <TextView
         android:id="@+id/textId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="41dp"
         android:text="@string/hello_world" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textId"
+        android:layout_below="@+id/textId"
+        android:layout_marginTop="128dp"
+        android:src="@drawable/ic_launcher" android:contentDescription="TODO"/>
 
 </RelativeLayout>
